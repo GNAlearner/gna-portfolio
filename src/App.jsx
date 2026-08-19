@@ -269,6 +269,38 @@ export default function Portfolio() {
     return () => el.removeEventListener("mousemove", onMove);
   }, []);
 
+  const logo = () => {
+    return (
+      <svg width="36" height="36" viewBox="0 0 36 36" style={{ flexShrink: 0 }}>
+        <defs>
+          <linearGradient id="logoGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stopColor="#C084FC" />
+            <stop offset="100%" stopColor="#F472B6" />
+          </linearGradient>
+        </defs>
+        <rect
+          x="0"
+          y="0"
+          width="36"
+          height="36"
+          rx="10"
+          fill="url(#logoGrad)"
+        />
+        <text
+          x="18"
+          y="24"
+          textAnchor="middle"
+          fontFamily="'Space Grotesk', sans-serif"
+          fontWeight="700"
+          fontSize="15"
+          fill="#150A1E"
+        >
+          GN
+        </text>
+      </svg>
+    );
+  };
+
   return (
     <div
       style={{
@@ -342,6 +374,15 @@ export default function Portfolio() {
         .tl-node {
           box-shadow: 0 0 0 4px rgba(10,14,20,1), 0 0 0 5px rgba(192,132,252,0.35);
         }
+        .header-nav {
+          display: flex;
+          gap: 28px;
+        }
+        @media (max-width: 639px) {
+          .header-nav {
+            gap: 12px;
+          }
+        }
         .nav-link { position: relative; }
         .nav-link::after {
           content: ""; position: absolute; left: 0; bottom: -4px; width: 0; height: 1px;
@@ -373,11 +414,9 @@ export default function Portfolio() {
             letterSpacing: 0.5,
           }}
         >
-          G N ADIGA<span style={{ color: "#C084FC" }}></span>
+          {logo()}
         </span>
-        <div
-          style={{ display: "flex", gap: 28, fontSize: 14, color: "#C9BEDD" }}
-        >
+        <div className="header-nav" style={{ fontSize: 14, color: "#C9BEDD" }}>
           {["About", "Experience", "Projects", "Contact"].map((l) => (
             <a key={l} href={`#${l.toLowerCase()}`} className="nav-link">
               {l}
@@ -840,7 +879,7 @@ export default function Portfolio() {
               }}
             >
               <a
-                href="mailto:your-email@example.com"
+                href="mailto:g.niranjana.adiga@gmail.com"
                 className="cta-btn"
                 style={{
                   padding: "12px 24px",
