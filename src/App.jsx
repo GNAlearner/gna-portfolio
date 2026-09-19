@@ -4,8 +4,8 @@ const FONT_IMPORT =
   "@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');";
 
 const ROLES = [
-  "Frontend Engineer",
-  "React & Redux Specialist",
+  "Full Stack Developer",
+  "React & Node.js Engineer",
   "Real-time UI Architect",
   "Accessibility-minded Builder",
 ];
@@ -30,11 +30,15 @@ const SKILLS = [
     ],
   },
   {
+    label: "Backend & Data",
+    tags: ["Node.js", "Express.js", "PostgreSQL", "REST APIs", "AWS S3"],
+  },
+  {
     label: "Forms & Validation",
     tags: ["Formik", "Yup", "Schema-driven forms", "Dynamic field logic"],
   },
   {
-    label: "Documents & i18n",
+    label: "Documents & translation",
     tags: [
       "jsPDF / AutoTable",
       "Multi-script rendering",
@@ -54,7 +58,7 @@ const SKILLS = [
 const EXPERIENCE = [
   {
     year: "2023 — Now",
-    role: "Senior Frontend Developer",
+    role: "Web Developer",
     org: "Orbio Solutions Pvt Ltd",
     desc: "A Technology Development Company that provides future-ready software and analytical solutions for businesses globally.",
   },
@@ -67,6 +71,16 @@ const EXPERIENCE = [
 ];
 
 const PROJECTS = [
+  {
+    title: "Document Exchange Platform",
+    tag: "Node.js · Express · PostgreSQL · AWS S3",
+    desc: "Designed and built end-to-end as a solo developer — a full-stack app for securely exchanging documents via AWS S3, covering both the React frontend and the Node/Express/PostgreSQL backend.",
+  },
+  {
+    title: "Legal Aid Knowledge Base API",
+    tag: "Node.js · Express · REST APIs",
+    desc: "Built CRUD endpoints powering the knowledge base module of the intake and matter-management platform, extending the app's backend alongside ongoing frontend feature work.",
+  },
   {
     title: "Real-time Contact Import Pipeline",
     tag: "Socket.IO · Redux",
@@ -91,11 +105,6 @@ const PROJECTS = [
     title: "Ecommerce Analytics Rebuild",
     tag: "React · State Architecture",
     desc: "Rebuilt a product analytics app from the ground up — restructured the state management layer and consolidated scattered UI into reusable components, cutting bundle size and improving load and interaction speed.",
-  },
-  {
-    title: "Document Exchange Platform",
-    tag: "Node.js · Express · AWS S3",
-    desc: "Designed and built end-to-end as a solo developer — a full-stack app for securely exchanging documents via AWS S3, covering both the React frontend and the Node/Express backend.",
   },
 ];
 
@@ -517,10 +526,10 @@ export default function Portfolio() {
                 lineHeight: 1.7,
               }}
             >
-              I build production React interfaces where state, real-time data,
-              and accessibility all have to work at once — think
-              WebSocket-driven imports, config-generated forms, and documents
-              rendered correctly across sixteen languages.
+              I build full stack products where state, real-time data, and
+              accessibility all have to work at once — from WebSocket-driven
+              imports and config-generated forms on the frontend, to the
+              PostgreSQL/Node backend and S3-backed storage behind them.
             </p>
           </Reveal>
           <Reveal delay={440}>
@@ -587,8 +596,8 @@ export default function Portfolio() {
               maxWidth: 680,
             }}
           >
-            A frontend developer focused on the parts most teams under-invest
-            in.
+            A full stack developer focused on the parts most teams
+            under-invest in.
           </h2>
         </Reveal>
         <Reveal delay={100}>
@@ -603,8 +612,11 @@ export default function Portfolio() {
           >
             My day-to-day sits inside a legal intake and matter-management
             platform — untangling socket middleware, building schema-driven
-            forms, and making sure every interaction still works on a keyboard
-            and a screen reader.
+            forms, contributing backend CRUD APIs for its knowledge base, and
+            making sure every interaction still works on a keyboard and a
+            screen reader. I've also independently designed and shipped a
+            full-stack document exchange app end to end, from Postgres schema
+            to React UI.
           </p>
         </Reveal>
 
@@ -867,7 +879,7 @@ export default function Portfolio() {
               Let's build something reliable.
             </h2>
             <p style={{ color: "#9C8FB0", marginTop: 10, fontSize: 15 }}>
-              Open to frontend roles — reach out directly.
+              Open to full stack roles — reach out directly.
             </p>
             <div
               style={{
