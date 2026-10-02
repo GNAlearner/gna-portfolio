@@ -120,7 +120,7 @@ export default function Portfolio() {
         <section className="pf-hero" aria-labelledby="hero-title">
           <div className="pf-hero-grid" aria-hidden="true" />
           <div className="pf-container pf-hero-content">
-            <p className="pf-status"><span aria-hidden="true" />Open to remote React frontend roles</p>
+            <p className="pf-status"><span aria-hidden="true" />Open to React frontend roles</p>
             <p className="pf-eyebrow">Niranjana Adiga G</p>
             <h1 id="hero-title">React interfaces for<br /><span>complex workflows.</span></h1>
             <p className="pf-hero-description">I build configurable forms, real-time review tools, and accessible business applications. My work includes a production legal-intake platform, multilingual PDF exports, and a case-management workspace.</p>
@@ -160,7 +160,7 @@ export default function Portfolio() {
         </section>
 
         <section className="pf-container pf-section pf-contact" id="contact" aria-labelledby="contact-title">
-          <div className="pf-contact-panel"><p className="pf-eyebrow">Let’s connect</p><h2 id="contact-title">Looking for a React frontend developer?</h2><p>I’m seeking remote frontend roles where I can contribute to complex React applications. Based in Karnataka, India.</p><div className="pf-actions"><a className="pf-button pf-button-primary" href={`mailto:${EMAIL}`}>Email me<Icon name="mail" /></a><a className="pf-button pf-button-secondary" href="https://www.linkedin.com/in/niranjana-adiga-g-a75663190/">LinkedIn<Icon name="arrow" /></a><a className="pf-button pf-button-secondary" href="https://github.com/GNAlearner">GitHub<Icon name="code" /></a></div><a className="pf-contact-email" href={`mailto:${EMAIL}`}>{EMAIL}</a></div>
+          <div className="pf-contact-panel"><p className="pf-eyebrow">Let’s connect</p><h2 id="contact-title">Looking for a React frontend developer?</h2><p>I’m seeking frontend roles where I can contribute to complex React applications. Based in Karnataka, India.</p><div className="pf-actions"><a className="pf-button pf-button-primary" href={`mailto:${EMAIL}`}>Email me<Icon name="mail" /></a><a className="pf-button pf-button-secondary" href="https://www.linkedin.com/in/niranjana-adiga-g-a75663190/">LinkedIn<Icon name="arrow" /></a><a className="pf-button pf-button-secondary" href="https://github.com/GNAlearner">GitHub<Icon name="code" /></a></div><a className="pf-contact-email" href={`mailto:${EMAIL}`}>{EMAIL}</a></div>
         </section>
       </main>
       <footer className="pf-footer pf-container"><span>© {new Date().getFullYear()} Niranjana Adiga G</span><a href="#top">Back to top ↑</a></footer>
